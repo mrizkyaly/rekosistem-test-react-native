@@ -3,16 +3,19 @@ import React from 'react';
 import {StatusBar} from 'react-native';
 import Router from './router/route';
 import {lightColors} from './utils';
+import {ThemeProvider} from './helper';
 
 const App = () => {
   return (
-    <NavigationContainer>
-      <StatusBar
-        backgroundColor={lightColors.neutral.white}
-        barStyle="dark-content"
-      />
-      <Router />
-    </NavigationContainer>
+    <ThemeProvider>
+      <NavigationContainer>
+        <StatusBar
+          backgroundColor={lightColors.neutral.white}
+          barStyle="dark-content"
+        />
+        <Router />
+      </NavigationContainer>
+    </ThemeProvider>
   );
 };
 

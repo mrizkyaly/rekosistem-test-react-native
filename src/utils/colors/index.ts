@@ -9,9 +9,6 @@ interface PrimaryColorPalette {
   surface?: string;
   shadow?: string;
 }
-interface SecondaryColorPalette {
-  main?: string;
-}
 
 interface TextColorPalette {
   title?: string;
@@ -31,7 +28,6 @@ interface InputColorPalette {
 
 export interface ThemeColors {
   primary: PrimaryColorPalette;
-  secondary: SecondaryColorPalette;
   text: TextColorPalette;
   neutral: NeutralColorPalette;
   border: BorderColorPalette;
@@ -40,13 +36,11 @@ export interface ThemeColors {
 
 export const lightColors: ThemeColors = {
   primary: {
-    main: '#F9862D',
-    surface: '#FFE2C2',
+    main: '#014BCF',
+    surface: '#e6edfa',
     shadow: 'rgba(249, 134, 45, 0.14)',
   },
-  secondary: {
-    main: '#AAC626',
-  },
+
   text: {
     title: '#393E46',
     subTitle: '#6C7076',
@@ -69,13 +63,11 @@ export const lightColors: ThemeColors = {
 
 export const darkColors: ThemeColors = {
   primary: {
-    main: '#F9862D',
-    surface: '#FFE2C2',
+    main: '#014BCF',
+    surface: '#e6edfa',
     shadow: 'rgba(249, 134, 45, 0.14)',
   },
-  secondary: {
-    main: '#AAC626',
-  },
+
   text: {
     title: '#393E46',
     subTitle: '#6C7076',
