@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "682964507185",
+    "project_id": "rekosistemtest-3f03c",
+    "storage_bucket": "rekosistemtest-3f03c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:682964507185:android:eb36f6734c2bc69fb7d310",
+        "android_client_info": {
+          "package_name": "com.rekosistemtestreactnative"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "682964507185-mknjr4bc15m2aoalj3jupt94b893t9tm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5AsHy27-fd61l4DxzhVQ67apL5qXWFpk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "682964507185-mknjr4bc15m2aoalj3jupt94b893t9tm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
