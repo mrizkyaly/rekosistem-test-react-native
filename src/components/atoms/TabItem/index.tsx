@@ -1,11 +1,10 @@
-import {
-  faClipboard,
-  faHome,
-  faUserCircle,
-} from '@fortawesome/free-solid-svg-icons';
-import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 import React from 'react';
 import {StyleSheet, Text, TouchableOpacity} from 'react-native';
+import {
+  CreditCardIcon,
+  QueueListIcon,
+  RectangleStackIcon,
+} from 'react-native-heroicons/solid';
 import {useTheme} from '../../../helper';
 import {fonts} from '../../../utils';
 
@@ -19,27 +18,24 @@ interface TabItemProps {
 const Icon = ({title, active}: {title: string; active: boolean}) => {
   const {colors} = useTheme();
 
-  if (title === 'Beranda') {
+  if (title === 'Transaction') {
     return (
-      <FontAwesomeIcon
-        icon={faHome}
-        color={active ? colors.secondary.main : colors.neutral.gray}
+      <CreditCardIcon
+        color={active ? colors.primary.main : colors.neutral.gray}
         size={24}
       />
     );
-  } else if (title === 'Pemesanan') {
+  } else if (title === 'ModalTransaction') {
     return (
-      <FontAwesomeIcon
-        icon={faClipboard}
-        color={active ? colors.secondary.main : colors.neutral.gray}
+      <RectangleStackIcon
+        color={active ? colors.primary.main : colors.neutral.gray}
         size={24}
       />
     );
-  } else if (title === 'Profil') {
+  } else if (title === 'CollectionDrag') {
     return (
-      <FontAwesomeIcon
-        icon={faUserCircle}
-        color={active ? colors.secondary.main : colors.neutral.gray}
+      <QueueListIcon
+        color={active ? colors.primary.main : colors.neutral.gray}
         size={24}
       />
     );
@@ -58,7 +54,7 @@ const TabItem: React.FC<TabItemProps> = ({
 
   const textStyles = [
     styles.tabText,
-    {color: active ? colors.secondary.main : colors.neutral.gray},
+    {color: active ? colors.primary.main : colors.neutral.gray},
   ];
 
   return (

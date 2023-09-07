@@ -1,4 +1,4 @@
-import {ThemeProvider} from './ThemeContext';
-import {useTheme} from './ThemeContext';
+import {ThemeProvider, useTheme} from './ThemeContext';
+import useForm from './useForm';
 
-export {ThemeProvider, useTheme};
+export {ThemeProvider, useForm, useTheme};
