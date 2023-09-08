@@ -23,3 +23,16 @@ export type SplashProps = ScreenProps<'Splash'>;
 export type TransactionProps = ScreenProps<'Transaction'>;
 export type CollectionDragProps = ScreenProps<'CollectionDrag'>;
 export type ModalTransactionProps = ScreenProps<'ModalTransaction'>;
+
+export interface TransactionData {
+  id: string;
+  productId: string;
+  total: string;
+  userId: string;
+  productName?: string;
+  price?: string;
+  typeName?: string;
+  typeColor?: string;
+  userName?: string;
+  userAge?: number;
+}
